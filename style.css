@@ -21,7 +21,7 @@ body{
     3. If the default font is not available then it will show the text in the default font style.
     */
 
-    /* background-color: #222; */
+    background-color: #222; 
     /* can we provide two background color seperated by commas
     like background-color: #222, #333;  
 
@@ -34,7 +34,7 @@ body{
     1. direction of gradient
     2. color of gradient
     */
-    background-image: linear-gradient(to left, #222, rgb(67, 58, 58));
+    /*background-image: linear-gradient(to left, #222, rgb(67, 58, 58));*/
     color: #fff;
 }
 
