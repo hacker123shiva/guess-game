@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    /* what is meaning of giving more than one value of font-family
+    and why we are giving cursive at last?
+
+    1. If the first font is not available then it will go to the next font.
+    2. If the last font is not available then it will go to the default font.
+    3. If the default font is not available then it will show the text in the default font style.
+    */
+
+    /* background-color: #222; */
+    /* can we provide two background color seperated by commas
+    like background-color: #222, #333;  
+
+    No, we can't provide two background color seperated by commas.
+    We can provide two background color by using linear-gradient() function.
+
+    background-image: linear-gradient(to right, #222, #333);
+    how linear-gradient() function works?
+    linear-gradient() function takes two arguments.
+    1. direction of gradient
+    2. color of gradient
+    */
+    background-image: linear-gradient(to left, #222, rgb(67, 58, 58));
+    color: #fff;
+}
+
+/* LAYOUT */
+header {
+    position: relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
+  }
+  
+  main {
+    height: 65vh;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .left {
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right {
+    width: 52rem;
+    font-size: 2rem;
+  }
+  
+  /* ELEMENTS STYLE */
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .number {
+    background: #eee;
+    color: #333;
+    font-size: 6rem;
+    width: 15rem;
+    padding: 3rem 0rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    /* what is use of translate (-50%,50%)
+    translate() function takes two arguments.
+    1. x-axis
+    2. y-axis
+    
+    
+
+    */
+  }
+  
+  .between {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  
+  .again {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  
+  .guess {
+    background: none;
+    border: 4px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 5rem;
+    padding: 2.5rem;
+    width: 25rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+  }
+  
+  .btn {
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 2rem;
+    font-family: inherit;
+    padding: 2rem 3rem;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ccc;
+  }
+  
+  .message {
+    margin-bottom: 8rem;
+    height: 3rem;
+  }
+  
+  .label-score {
+    margin-bottom: 2rem;
+  }
+
+
